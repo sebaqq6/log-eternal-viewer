@@ -1,0 +1,358 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 1450px;
+    height: 800px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 14px 8px rgb(128, 0, 133);
+    -moz-box-shadow: 0px 0px 14px 8px rgb(128, 0, 133);
+    box-shadow: 0px 0px 14px 8px rgb(128, 0, 133);
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    background-color: rgb(97, 0, 92);
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#navigation-bot {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.navigation a {
+  float: left;
+  display: inline;
+  color: rgb(171 171 171);
+  text-align: center;
+  padding: 11px;
+  text-decoration: none;
+  font-size: 19px;
+  margin: 3px;
+}
+
+.navigation a:hover {
+  background-color: #860074;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.navigation a.active {
+  background-color: #ae00ff;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.navigation select {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    color: white;
+    background: #8700bd;
+    border-radius: 10px;
+    font-size: 17px;
+    border: none;
+}
+
+option {
+  border-radius: 10px;
+}
+
+.navigation .search-container {
+  float: right;
+}
+
+.navigation input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: #790097;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(255, 138, 235);
+  opacity: 1; /* Firefox */
+}
+
+
+.navigation .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 5px;
+  background: #6e1a79;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navigation .search-container button:hover {
+  background: #9200be;
+}
+
+#btnResetSearch {
+  float: right;
+  margin-top: 16px;
+  margin-right: 10px;
+  background: #6e1a79;
+  color: rgb(58, 58, 58);
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: default;
+}
+
+
+.datetime {
+  background-color: #790097;
+  color: white;
+  border-radius: 5px;
+  border-color: #44004b;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.logContent {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(24, 24, 24);
+  height: 700px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.logEntry {
+  color: #a8a8a8;
+  width: 100%;
+  word-wrap: break-word;
+  margin: 1px;
+  border-top: 1px;
+  border-top-style: dashed ;
+  border-color: #3b3b3b;
+  display: none;
+}
+
+.logEntry:hover {
+  color: rgb(193, 193, 193);
+  width: 100%;
+  word-wrap: break-word;
+  margin: 1px;
+  border-top: 1px;
+  border-top-style: dashed ;
+  border-color: #3b3b3b;
+  background-color: #1b1b1b;
+}
+
+.logEntry .tags {
+  color: #797979;
+  font-weight: bold;
+}
+
+.logEntry .tagEvp {
+  color: #9300aa;
+  font-weight: bold;
+}
+
+.logEntry .tagSvp {
+  color: #028b00;
+  font-weight: bold;
+}
+
+.logEntry .tagVip {
+  color: #cabc00;
+  font-weight: bold;
+}
+
+.logEntry .tagLocal {
+  color: #eadf44;
+}
+
+.logEntry .tagEventchat {
+  color: #54bce9;
+}
+
+.logEntry .tagAdmin {
+  color: #cf1313;
+  font-weight: bold;
+}
+
+.logEntry .tagMod {
+  color: #de860a;
+  font-weight: bold;
+}
+
+.logEntry .tagGamemaster {
+  color: #2920d4;
+  font-weight: bold;
+}
+
+.logEntry .tagSupport {
+  color: #0174c1;
+  font-weight: bold;
+}
+
+.logEntry .tagDetail {
+  color: #ff4400;
+  font-weight: bold;
+}
+
+.logEntry .tagAdmin {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+
+.logEntry .ip {
+  color: rgb(41, 214, 41);
+  text-decoration: none;
+}
+
+.logEntry a:visited {
+  color: rgb(0, 181, 187);
+  text-decoration: none;
+}
+
+.logEntry .connect {
+  color: rgb(0, 138, 0);
+  font-weight: bold;
+}
+
+.logEntry .disconnect {
+  color: rgb(187, 94, 0);
+  font-weight: bold;
+}
+
+.logEntry .command {
+  color: #6a76a9;
+  font-weight: bold;
+}
+
+.logEntry .tagSpy {
+  color: #00c2e8;
+  font-weight: bold;
+}
+
+.logEntry .spyArrow {
+  color: #00c2e8;
+  font-weight: bold;
+}
+
+.logEntry .tagAdminchat {
+  color: #df0004;
+}
+
+.logEntry .nickname {
+  color: #c3c3c3;
+  font-weight: bold;
+}
+
+.navigation .divDateTime {
+  height: 30px;
+  width: 390px;
+  float: right;
+  padding-top: 10px;
+  margin-top: 4.5px;
+  margin-right: 10px;
+}
+
+.navigation #liveCheckbox {
+  background-color: #6e1a79;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  height: 20px;
+  width: 80px;
+  float: right;
+  padding-top: 7px;
+  margin-top: 10.5px;
+  margin-right: 10px;
+  color: rgb(167, 167, 167);
+  cursor: pointer;
+  border: rgb(59, 59, 59);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.navigation #liveCheckbox:hover {
+  color: rgb(235, 235, 235);
+  border: rgb(90, 90, 90);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.navigation #liveCheckbox.active {
+  color: rgb(231, 64, 64);
+  border: rgb(202, 0, 0);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.navigation #liveCheckbox.blocked {
+  color: rgb(77, 77, 77);
+  cursor: not-allowed;
+  border: rgb(77, 77, 77);
+  border-style: solid;
+  border-width: 2px;
+}
+
+
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  color: greenyellow
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #38003a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a1008c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ae00d1;
+}
+

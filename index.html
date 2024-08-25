@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ładowanie logów...
+    </title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navigation">
+            <a class="active" href="#" id="showAll">Wszystko</a>
+            <a href="#" id="showCommands">Komendy</a>
+            <a href="#" id="showChat">Czat</a>
+            <a href="#" id="showActivity">Aktywność</a>
+
+            <button id="btnResetSearch"><i class="fa fa-ban"></i></button>
+            <div class="search-container">
+                <form id="searchForm">
+                    <input type="text" placeholder="Szukaj..." id="textSearch">
+                    <button id="btnSearch"><i class="fa fa-search"></i></button>
+                </form><i class=""></i>
+            </div>
+            <div class="divDateTime">
+                <input class="datetime" type="datetime-local" id="startDate"/>
+                -
+                <input class="datetime" type="datetime-local" id="endDate"/>
+            </div>
+            <div id="liveCheckbox">
+                Na żywo
+            </div>
+        </div>
+        <div class="logContent">
+            Trwa ładowanie logów...
+        </div>
+        <div class="navigation" id="navigation-bot">
+            <a href="#" id="previousPage">Poprzednia strona</a>
+            <select class="select" id="selectPage">
+                <option id="optionPage" value="1">---</option>
+            </select>
+            <a href="#" style="float: right;" id="nextPage">Następna strona</a>
+        </div>
+    </div>
+    <footer><%= sessionPlaceholder %></footer>
+    <script src="/jquery.js"></script>
+    <script src="/clientapi.js"></script>
+</body>
+</html>
